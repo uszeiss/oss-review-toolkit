@@ -46,6 +46,13 @@ dependencies {
     antlr("org.antlr:antlr4:$antlrVersion")
 
     api("com.fasterxml.jackson.core:jackson-databind:$jacksonVersion")
+    api("com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion")
+    api("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:$jacksonVersion")
+    api("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:$jacksonVersion")
+
+    implementation("com.fasterxml.jackson.core:jackson-databind:$jacksonVersion")
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jacksonVersion")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonVersion")
 
     testImplementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonVersion")
 }
