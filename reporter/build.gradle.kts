@@ -28,7 +28,9 @@ sourceSets.named("main") {
 }
 
 repositories {
-    maven("http://www.robotooling.com/maven/")
+    maven("https://www.robotooling.com/maven/") {
+        name = "Repository for simple-excel"
+    }
 }
 
 dependencies {
