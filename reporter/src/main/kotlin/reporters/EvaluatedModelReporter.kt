@@ -60,12 +60,12 @@ abstract class EvaluatedModelReporter(
     override val defaultFilename = defaultFileName
 
     override fun generateReport(outputStream: OutputStream, input: ReporterInput) {
-        val evaluatedModel = EvaluatedModel(
-            stats = StatisticsCalculator().getStatistics(input.ortResult, input.resolutionProvider)
-        )
-
-        outputStream.bufferedWriter().use {
-            it.write(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(evaluatedModel))
-        }
+//        val evaluatedModel = EvaluatedModel(
+//            stats = StatisticsCalculator().getStatistics(input.ortResult, input.resolutionProvider)
+//        )
+//
+//        outputStream.bufferedWriter().use {
+//            it.write(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(evaluatedModel))
+//        }
     }
 }
